@@ -39,7 +39,7 @@ It provides a semi–transparent, draggable window with tabs, notifications, and
 Put `NXLib.lua` in your executor with the loadstring, then execute it:
 
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Nyxusss/loadstring/refs/heads/main/NXLibSource.lua",true))()
+local NXLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Nyxusss/loadstring/refs/heads/main/NXLibSource.lua",true))()
 ```
 
 ### 2. Create a window
