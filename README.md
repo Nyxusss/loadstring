@@ -12,6 +12,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Nyxusss/loadstring/re
 - Edit: Modify the values directly in the text boxes (for numbers/strings) or click the toggle button (for booleans).
 - Apply: Click the APPLY CHANGES button to save the new values to the equipped tool, if its numbers/strings press enter first.
 
+# 🤖 AI Disclaimer
+- In this script AI was used to create the GUI, all other functions to detect tools, etc. were created by me and few functions fixed by AI
+
 # ⚠️ Usage Disclaimer
 - THE USE OF EXPLOITS VIOLATES ROBLOX'S TERMS OF SERVICE.
   Roblox explicitly prohibits the use of exploits to gain an unfair advantage on the platform or bypass game limitations. Using scripts such as this "Tool Attributes Modder" may result in the temporal/permanent suspension or deletion of your account.
