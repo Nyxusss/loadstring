@@ -1,4 +1,4 @@
---== Tool Attributes Modder FINAL (tolerante con texto/0/vacío) ==--
+--== Tool Attributes Modder ==--
 
 local Players = game:GetService("Players")
 local UserInputService = game:GetService("UserInputService")
@@ -146,8 +146,8 @@ end)
 -- Atributos
 -----------------------------------------------------------
 local currentTool = nil
-local attrs = {}   -- {name,value,type}
-local pending = {} -- cambios: siempre guardamos el TEXTO para no bool
+local attrs = {}
+local pending = {}
 
 local function clearList()
     for _,c in ipairs(list:GetChildren()) do
@@ -223,7 +223,6 @@ local function buildUI()
         nameLabel.Parent = row
 
         if info.type == "boolean" then
-            -- BOOL: toggle
             local btn = Instance.new("TextButton")
             btn.Size = UDim2.new(0.4,0,1,0)
             btn.Position = UDim2.new(0.58,0,0,0)
@@ -246,7 +245,6 @@ local function buildUI()
                 status.TextColor3 = Color3.fromRGB(255,210,120)
             end)
         else
-            -- NO BOOL: TextBox; guardamos SIEMPRE el texto
             local box = Instance.new("TextBox")
             box.Size = UDim2.new(0.4,0,1,0)
             box.Position = UDim2.new(0.58,0,0,0)
@@ -273,11 +271,11 @@ local function buildUI()
 end
 
 -----------------------------------------------------------
--- APPLY: conversión final aquí
+-- APPLY
 -----------------------------------------------------------
 apply.MouseButton1Click:Connect(function()
     if not currentTool or next(pending) == nil then
-        status.Text = "No changes to apply"
+        status.Text = "No changes to apply, if u changed a string/number press enter"
         status.TextColor3 = Color3.fromRGB(255,180,150)
         return
     end
@@ -290,9 +288,8 @@ apply.MouseButton1Click:Connect(function()
             local finalValue
 
             if info.type == "boolean" then
-                finalValue = new  -- ya es bool
+                finalValue = new
             elseif info.type == "number" then
-                -- new es texto; "" => 0; "123" => 123; basura => 0
                 local txt = tostring(new)
                 if txt == "" then
                     finalValue = 0
@@ -300,15 +297,13 @@ apply.MouseButton1Click:Connect(function()
                     finalValue = tonumber(txt) or 0
                 end
             else
-                -- string / otros: mantener texto tal cual (incluido vacío)
                 finalValue = tostring(new)
             end
 
             currentTool:SetAttribute(key, finalValue)
         end
     end
-
-    -- re‑equip para que el juego pille cambios
+    -- re-equip
     local t = currentTool
     t.Parent = player.Backpack
     task.wait(0.1)
@@ -342,7 +337,7 @@ closeBtn.MouseButton1Click:Connect(function()
 end)
 
 -----------------------------------------------------------
--- Eventos equip / respawn
+-- Events equip / respawn
 -----------------------------------------------------------
 local function hookCharacter(char)
     char.ChildAdded:Connect(function(child)
