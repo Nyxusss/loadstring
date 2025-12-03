@@ -366,5 +366,3 @@ player.CharacterAdded:Connect(function(char)
     task.wait(1)
     hookCharacter(char)
 end)
-
-print("Tool Attributes Modder FINAL loaded")
