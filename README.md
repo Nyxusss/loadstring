@@ -16,7 +16,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Nyxusss/loadstring/re
 - In this script AI was used to create the GUI, all other functions to detect tools, etc. were created by me and few functions fixed by AI
 - -----------------------------------------------------------------------------------------------------------------------------------------------­­
 # 👮‍♂️🔫 Prison Life Silent Aim
-
+- Credits to dai1228 (i only changed some settings)
+- You can found original here https://scriptblox.com/script/MP5-Prison-Life-First-Open-source-Silent-Aim-73330
 # 🎯 Purpose
 - This script allows users to create a FOV circle and track the enemy team and redirect bullets towards the enemy. (Only Prison Life, use settings)
 
