@@ -14,16 +14,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Nyxusss/loadstring/re
 
 # 🤖 AI Disclaimer
 - In this script AI was used to create the GUI, all other functions to detect tools, etc. were created by me and few functions fixed by AI
--
--
--
--
--
--
--
--
--
--
+
+­­
+­­­­
+­
+­­
+­­
+­­
+­­
 # 👮‍♂️🔫 Prison Life Silent Aim
 
 # 🎯 Purpose
