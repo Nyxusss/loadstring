@@ -54,7 +54,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Nyxusss/loadstring/re
     Settings.RandomAimParts = false,
     Settings.AimPartsList = {"Head", "Torso", "HumanoidRootPart", "LeftArm", "RightArm", "LeftLeg", "RightLeg"}
 
-loadstring(game:httpget("https://raw.githubusercontent.com/Nyxusss/loadstring/refs/heads/main/PLSilentAim.lua",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Nyxusss/loadstring/refs/heads/main/PLSilentAim.lua",true))()
 ```
 - Supports Xeno, Solara, etc (Only Prison Life)
 
