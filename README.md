@@ -15,6 +15,33 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Nyxusss/loadstring/re
 # 🤖 AI Disclaimer
 - In this script AI was used to create the GUI, all other functions to detect tools, etc. were created by me and few functions fixed by AI
 
+# 👮‍♂️🔫 Prison Life Silent Aim
+
+# 🎯 Purpose
+- This script allows users to create a FOV circle and track the enemy team and redirect bullets towards the enemy. (Only Prison Life, use settings)
+
+# 🚀 Usage
+- Execute the script to load the Silent Aim
+```lua
+-- Silent aim settings
+    Settings.TeamCheck = true,
+    Settings.WallCheck = true,
+    Settings.DeathCheck = true,
+    Settings.ForceFieldCheck = true,
+    Settings.HitChance = 100,
+    Settings.MissSpread = 5,
+    Settings.FOV = 90,
+    Settings.ShowFOV = true,
+    Settings.ShowTargetLine = true,
+    Settings.ToggleKey = Enum.KeyCode.RightShift,
+    Settings.AimPart = "Head",
+    Settings.RandomAimParts = false,
+    Settings.AimPartsList = {"Head", "Torso", "HumanoidRootPart", "LeftArm", "RightArm", "LeftLeg", "RightLeg"}
+
+loadstring missing
+```
+- Supports Xeno, Solara, etc (Only Prison Life)
+
 # ⚠️ Usage Disclaimer
 - THE USE OF EXPLOITS VIOLATES ROBLOX'S TERMS OF SERVICE.
   Roblox explicitly prohibits the use of exploits to gain an unfair advantage on the platform or bypass game limitations. Using scripts such as this "Tool Attributes Modder" may result in the temporal/permanent suspension or deletion of your account.
