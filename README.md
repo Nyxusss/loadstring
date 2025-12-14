@@ -24,6 +24,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Nyxusss/loadstring/re
 # 🚀 Usage
 - Execute the script to load the Silent Aim
 ```lua
+-- Credits to dai1228 (i only changed some settings)
+-- You can found original here https://scriptblox.com/script/MP5-Prison-Life-First-Open-source-Silent-Aim-73330
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Nyxusss/loadstring/refs/heads/main/PLSilentAim.lua",true))()
 ```
 - Supports Xeno, Solara, etc (Only Prison Life)
