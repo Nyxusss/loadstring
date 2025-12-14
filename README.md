@@ -14,23 +14,16 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Nyxusss/loadstring/re
 
 # 🤖 AI Disclaimer
 - In this script AI was used to create the GUI, all other functions to detect tools, etc. were created by me and few functions fixed by AI
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
 # 👮‍♂️🔫 Prison Life Silent Aim
 
 # 🎯 Purpose
@@ -39,24 +32,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Nyxusss/loadstring/re
 # 🚀 Usage
 - Execute the script to load the Silent Aim
 ```lua
--- Silent aim settings
-    Settings.TeamCheck = true,
-    Settings.WallCheck = true,
-    Settings.DeathCheck = true,
-    Settings.ForceFieldCheck = true,
-    Settings.HitChance = 100,
-    Settings.MissSpread = 5,
-    Settings.FOV = 90,
-    Settings.ShowFOV = true,
-    Settings.ShowTargetLine = true,
-    Settings.ToggleKey = Enum.KeyCode.RightShift,
-    Settings.AimPart = "Head",
-    Settings.RandomAimParts = false,
-    Settings.AimPartsList = {"Head", "Torso", "HumanoidRootPart", "LeftArm", "RightArm", "LeftLeg", "RightLeg"}
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Nyxusss/loadstring/refs/heads/main/PLSilentAim.lua",true))()
 ```
 - Supports Xeno, Solara, etc (Only Prison Life)
+- Enjoy!
 
 # ⚠️ Usage Disclaimer
 - THE USE OF EXPLOITS VIOLATES ROBLOX'S TERMS OF SERVICE.
